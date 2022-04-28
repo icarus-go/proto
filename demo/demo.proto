@@ -7,20 +7,29 @@ option java_multiple_files = true;
 option java_package = "demo";
 
 service Demo {
-	rpc CreateDemo (CreateDemoRequest) returns (CreateDemoReply);
-	rpc UpdateDemo (UpdateDemoRequest) returns (UpdateDemoReply);
-	rpc DeleteDemo (DeleteDemoRequest) returns (DeleteDemoReply);
-	rpc GetDemo (GetDemoRequest) returns (GetDemoReply);
-	rpc ListDemo (ListDemoRequest) returns (ListDemoReply);
+    rpc CreateDemo (CreateDemoRequest) returns (CreateDemoReply);
+    rpc UpdateDemo (UpdateDemoRequest) returns (UpdateDemoReply);
+    rpc DeleteDemo (DeleteDemoRequest) returns (DeleteDemoReply);
+    rpc GetDemo (GetDemoRequest) returns (GetDemoReply);
+    rpc ListDemo (ListDemoRequest) returns (ListDemoReply);
 }
 
-message CreateDemoRequest {}
+message CreateDemoRequest {
+    string name = 1;
+    string value = 2;
+}
 message CreateDemoReply {}
 
-message UpdateDemoRequest {}
+message UpdateDemoRequest {
+    uint32 id = 1;
+    string name = 2;
+    string value = 3;
+}
 message UpdateDemoReply {}
 
-message DeleteDemoRequest {}
+message DeleteDemoRequest {
+    int32 id = 1;
+}
 message DeleteDemoReply {}
 
 message GetDemoRequest {}

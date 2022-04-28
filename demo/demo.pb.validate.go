@@ -57,6 +57,10 @@ func (m *CreateDemoRequest) validate(all bool) error {
 
 	var errors []error
 
+	// no validation rules for Name
+
+	// no validation rules for Value
+
 	if len(errors) > 0 {
 		return CreateDemoRequestMultiError(errors)
 	}
@@ -259,6 +263,12 @@ func (m *UpdateDemoRequest) validate(all bool) error {
 
 	var errors []error
 
+	// no validation rules for Id
+
+	// no validation rules for Name
+
+	// no validation rules for Value
+
 	if len(errors) > 0 {
 		return UpdateDemoRequestMultiError(errors)
 	}
@@ -460,6 +470,8 @@ func (m *DeleteDemoRequest) validate(all bool) error {
 	}
 
 	var errors []error
+
+	// no validation rules for Id
 
 	if len(errors) > 0 {
 		return DeleteDemoRequestMultiError(errors)
