@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectTasksOptions">
+    <enabled-global>
+      <option value="kratos-proto-client" />
+      <option value="protoc-validate-generate" />
+    </enabled-global>
+  </component>
+</project>
