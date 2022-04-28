@@ -32,7 +32,9 @@ message DeleteDemoRequest {
 }
 message DeleteDemoReply {}
 
-message GetDemoRequest {}
+message GetDemoRequest {
+    string userName = 1;
+}
 message GetDemoReply {}
 
 message ListDemoRequest {}

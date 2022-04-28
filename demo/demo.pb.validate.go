@@ -675,6 +675,8 @@ func (m *GetDemoRequest) validate(all bool) error {
 
 	var errors []error
 
+	// no validation rules for UserName
+
 	if len(errors) > 0 {
 		return GetDemoRequestMultiError(errors)
 	}
